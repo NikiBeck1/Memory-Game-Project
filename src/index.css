@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #56004b;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 3rem;
+}
+.title h1 {
+  margin: 0;
+}
+.instructions h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: calc(8px + 1.5vmin);
+}
+
+.current-score, .high-score {
+   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(8px + 1.5vmin);
+  color: #333;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.control-board {
+  background-color: #ffffff;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.word-display {
+  background-color: #7d4545;
+  min-width: 8rem;
+  padding: 1rem 2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: calc(12px + 2vmin);
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+.game-prompt {
+  font-size: calc(8px + 1.5vmin);
+  margin-bottom: 1rem;
+  color: #333333;
+}
+.yes-button, .no-button {
+  background-color: #56004b;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin: 0 1rem;
+  font-size: calc(8px + 1.5vmin);
+  border-radius: 4px;
+  cursor: pointer;
+}
