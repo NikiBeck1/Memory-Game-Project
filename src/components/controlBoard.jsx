@@ -1,19 +1,22 @@
 import React from 'react';
 
-
-function controlBoard() {
-  return (
-    <div className="control-board">
-        <div className="buttons">
-            <p className='game-prompt'>Have you seen this string before?</p>
-            <button className="yes-button">Yes</button>
-            <button className="no-button">No</button>
-        </div>
-        <div className="word-display">
-            <p>juu</p>
-        </div>
-    </div>
-  );
+class ControlBoard extends React.Component {
+constructor(props) {
+super(props);
 }
 
-export default controlBoard;
+render() {
+return (
+<div className="control-board">
+<div className="game-prompt"><h2>Have you seen this string before?</h2></div>
+<div className='button-group'>
+  <div className="yes-button"><h3>Yes</h3></div>
+  <div className="no-button"><h3>No</h3></div>
+  <div className="reset-button"><h3>Start Over</h3></div>
+</div>
+</div>
+);
+}
+}
+
+export default ControlBoard;
