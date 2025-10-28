@@ -1,17 +1,38 @@
-import './App.css';
 import React from 'react';
-import Header from './components/header';
-import ControlBoard from './components/controlBoard';
 import GameBox from './components/gameBox';
+import ScoreDisplay from './components/scoreDisplay';
+import Header from './components/header';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <GameBox stringToDisplay="Example String" />
-      <ControlBoard />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      score: 0
+    };
+  }
+
+  updateScore = (amount) => {
+    this.setState((prevState) => ({
+      score: prevState.score + amount
+    }));
+  };
+
+  resetScore = () => {
+    this.setState({ score: 0 });
+  };
+
+  render() {
+    return (
+      <div className="app-container">
+        <Header />
+        <ScoreDisplay score={this.state.score} />
+        <GameBox
+        score={this.state.score}
+        updateScore={this.updateScore}
+        resetScore={this.resetScore} />
+      </div>
+    );
+  }
 }
 
 export default App;

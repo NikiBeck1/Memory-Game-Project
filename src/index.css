@@ -27,13 +27,21 @@ code {
   color: white;
   padding: 3rem;
 }
-.title h1 {
+.header h1 {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.instructions h2 {
+.header h2 {
   margin: 0;
   font-weight: normal;
   font-size: calc(8px + 1.5vmin);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .current-score, .high-score {
@@ -90,7 +98,7 @@ code {
 }
 
 .yes-button, .no-button {
-  background-color: #56004b;
+  background-color: #2b3238;
   color: #ffffff;
   padding: 0.5rem 1.5rem;
   margin: 0 1rem;
@@ -121,7 +129,6 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #333333;
   padding: 2rem;
@@ -136,4 +143,13 @@ code {
   font-size: calc(14px + 2vmin);
   color: #000000;
   border: #000000 5px solid;
+  align-items: center;
+}
+
+.string-display h3 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
