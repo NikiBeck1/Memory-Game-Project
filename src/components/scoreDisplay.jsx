@@ -13,7 +13,7 @@ render() {
 const { score, highScore } = this.props;
 return (
 <div className="scoreboard">
-<div className="current-score"><h3>Score: {score}</h3></div>
+<div className="current-score"><h3>Player Score: {score}</h3></div>
 <div className="high-score"><h3>Highest Score: {highScore}</h3></div>
 </div>
 );
